@@ -61,7 +61,7 @@ public class Course {
         this.courseName = courseName;
     }
 
-    public String getCapitalizedCourseName() {
+    public final String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
     }
 
