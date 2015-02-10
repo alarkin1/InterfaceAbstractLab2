@@ -8,7 +8,6 @@ package lab1;
  */
 public class IntroJavaCourse extends Course {
 
-    private String courseName;
     private String prerequisites;
 
     public IntroJavaCourse(String courseName, String courseNumber) {

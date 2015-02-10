@@ -9,13 +9,11 @@ import javax.swing.JOptionPane;
  * @version 1.00
  */
 public class AdvancedJavaCourse extends Course {
-
-    String courseName;
+    
     private String prerequisites;
 
     public AdvancedJavaCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+        super(courseName, courseNumber);
     }
 
     public String getCapitalizedCourseName() {
@@ -34,16 +32,7 @@ public class AdvancedJavaCourse extends Course {
         }
         this.prerequisites = prerequisites;
     }
-
-    public void setCredits(double credits) {
-        if (credits < 0.5 || credits > 4.0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
-        }
-        this.setCredits(credits);
-    }
-
+    
     public String getCourseName() {
         return courseName;
     }

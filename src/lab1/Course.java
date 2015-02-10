@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class Course {
 
+    private String courseName;
     private String courseNumber;
     private double credits;
 
@@ -45,6 +46,19 @@ public class Course {
             System.exit(0);
         }
         this.credits = credits;
+    }
+
+    public final String getCourseName() {
+        return courseName;
+    }
+
+    public final void setCourseName(String courseName) {
+        if (courseName == null || courseName.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: courseName cannot be null of empty string");
+            System.exit(0);
+        }
+        this.courseName = courseName;
     }
 
 }
