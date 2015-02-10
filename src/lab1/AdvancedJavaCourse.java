@@ -16,10 +16,6 @@ public class AdvancedJavaCourse extends Course {
         super(courseName, courseNumber);
     }
 
-    public String getCapitalizedCourseName() {
-        return this.getCourseName().toUpperCase();
-    }
-
     public String getPrerequisites() {
         return prerequisites;
     }
@@ -31,14 +27,6 @@ public class AdvancedJavaCourse extends Course {
             System.exit(0);
         }
         this.prerequisites = prerequisites;
-    }
-    
-    public String getCourseName() {
-        return courseName;
-    }
-
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
     }
 
 }
