@@ -52,8 +52,4 @@ public abstract class ProgrammingCourse {
         this.courseName = courseName;
     }
 
-    public final String getCapitalizedCourseName() {
-        return this.getCourseName().toUpperCase();
-    }
-
 }
