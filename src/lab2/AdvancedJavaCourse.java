@@ -35,7 +35,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse, ProgrammingCourses
     }
 
     public final void setCredits(double credits) {
-        if (credits < 0 || credits > 4.0) {
+        if (credits < 0 || credits > 5.0) {
             //Carry error from here
         }
         this.credits = credits;
