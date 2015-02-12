@@ -9,11 +9,11 @@ import javax.swing.JOptionPane;
  * @author your name goes here
  * @version 1.00
  */
-public class CoursesWithPrerequisites extends Course {
+public class ProgrammingCoursesWithPrerequisites extends ProgrammingCourse {
 
     private String prerequisites;
 
-    public CoursesWithPrerequisites(String courseName, String courseNumber) {
+    public ProgrammingCoursesWithPrerequisites(String courseName, String courseNumber) {
         super(courseName, courseName);
     }
 
