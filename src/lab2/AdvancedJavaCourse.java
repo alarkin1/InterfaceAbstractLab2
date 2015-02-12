@@ -6,7 +6,7 @@ package lab2;
  * @Alex Larkin
  * @version 1.00
  */
-public class AdvancedJavaCourse implements ProgrammingCourse {
+public class AdvancedJavaCourse implements ProgrammingCourse, ProgrammingCoursesWPrereq {
 
     private String prerequisites;
     private String courseName;

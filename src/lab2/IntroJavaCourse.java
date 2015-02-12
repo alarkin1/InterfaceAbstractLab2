@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @Alex Larkin
  * @version 1.00
  */
-public class IntroJavaCourse implements ProgrammingCourse {
+public class IntroJavaCourse implements ProgrammingCourse, ProgrammingCoursesWPrereq {
 
     private String prerequisites;
     private String courseName;
