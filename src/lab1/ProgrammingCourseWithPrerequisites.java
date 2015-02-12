@@ -4,16 +4,16 @@ import javax.swing.JOptionPane;
 
 /**
  * This is a class that allows inheriting classes to automatically have
- * certain methods that are shared between the Java courses.
+ * certain methods and properties that are shared between the Java courses.
  *
- * @author your name goes here
+ * @author alarkin1
  * @version 1.00
  */
-public class ProgrammingCoursesWithPrerequisites extends ProgrammingCourse {
+public class ProgrammingCourseWithPrerequisites extends ProgrammingCourse {
 
     private String prerequisites;
 
-    public ProgrammingCoursesWithPrerequisites(String courseName, String courseNumber) {
+    public ProgrammingCourseWithPrerequisites(String courseName, String courseNumber) {
         super(courseName, courseName);
     }
 

@@ -6,7 +6,7 @@
 package lab1;
 /**
  *
- * @author Alex
+ * @author alarkin1
  */
 public abstract class ProgrammingCourse {
 
@@ -46,7 +46,7 @@ public abstract class ProgrammingCourse {
     }
 
     public final void setCourseName(String courseName) {
-        if (courseName == null || courseName.length() == 0) {
+        if (courseName == null || courseName.isEmpty()) {
             //Do something here to carry the error
         }
         this.courseName = courseName;
