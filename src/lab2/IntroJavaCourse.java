@@ -1,4 +1,5 @@
 package lab2;
+
 import javax.swing.JOptionPane;
 
 /**
@@ -7,7 +8,7 @@ import javax.swing.JOptionPane;
  * @Alex Larkin
  * @version 1.00
  */
-public class IntroJavaCourse implements Course {
+public class IntroJavaCourse implements ProgrammingCourse {
 
     private String prerequisites;
     private String courseName;
@@ -15,6 +16,7 @@ public class IntroJavaCourse implements Course {
     private double credits;
 
     public IntroJavaCourse(String courseName, String courseNumber) {
+        //May need validation
         this.courseName = courseName;
         this.courseNumber = courseNumber;
     }
@@ -24,10 +26,8 @@ public class IntroJavaCourse implements Course {
     }
 
     public final void setCourseNumber(String courseNumber) {
-        if (courseNumber == null || courseNumber.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseNumber cannot be null of empty string");
-            System.exit(0);
+        if (courseNumber == null || courseNumber.isEmpty()) {
+            //Carry the error from here
         }
         this.courseNumber = courseNumber;
     }
@@ -37,10 +37,8 @@ public class IntroJavaCourse implements Course {
     }
 
     public final void setCredits(double credits) {
-        if (credits < 0.5 || credits > 4.0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
+        if (credits < 0 || credits > 5.0) {
+            //Carry th error from here
         }
         this.credits = credits;
     }
@@ -50,16 +48,21 @@ public class IntroJavaCourse implements Course {
     }
 
     public final void setCourseName(String courseName) {
-        if (courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
+        if (courseName == null || courseName.isEmpty()) {
+            //Carry the error from here
         }
         this.courseName = courseName;
     }
 
-    public final String getCapitalizedCourseName() {
-        return this.getCourseName().toUpperCase();
+    public final String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public final void setPrerequisites(String prerequisites) {
+        if (prerequisites == null || prerequisites.isEmpty()) {
+            //Carry error from here
+        }
+        this.prerequisites = prerequisites;
     }
 
 }

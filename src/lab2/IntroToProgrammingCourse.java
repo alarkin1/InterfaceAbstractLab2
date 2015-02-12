@@ -1,20 +1,18 @@
 package lab2;
-
-import javax.swing.JOptionPane;
-
 /**
  * Describe responsibilities here.
  *
  * @Alex Larkin
  * @version     1.00
  */
-public class IntroToProgrammingCourse implements Course{
+public class IntroToProgrammingCourse implements ProgrammingCourse{
 
     private String courseName;
     private String courseNumber;
     private double credits;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
+        //May need validation
         this.courseName = courseName;
         this.courseNumber = courseNumber;
     }
@@ -24,10 +22,8 @@ public class IntroToProgrammingCourse implements Course{
     }
 
     public final void setCourseNumber(String courseNumber) {
-        if (courseNumber == null || courseNumber.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseNumber cannot be null of empty string");
-            System.exit(0);
+        if (courseNumber == null || courseNumber.isEmpty()) {
+            //Carry error from here
         }
         this.courseNumber = courseNumber;
     }
@@ -37,10 +33,8 @@ public class IntroToProgrammingCourse implements Course{
     }
 
     public final void setCredits(double credits) {
-        if (credits < 0.5 || credits > 4.0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
+        if (credits < 0 || credits > 5.0) {
+            //Carry error from here
         }
         this.credits = credits;
     }
@@ -50,17 +44,10 @@ public class IntroToProgrammingCourse implements Course{
     }
 
     public final void setCourseName(String courseName) {
-        if (courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
+        if (courseName == null || courseName.isEmpty()) {
+            //Carry error from here
         }
         this.courseName = courseName;
     }
-
-    public final String getCapitalizedCourseName() {
-        return this.getCourseName().toUpperCase();
-    }
-
+    
 }
-
