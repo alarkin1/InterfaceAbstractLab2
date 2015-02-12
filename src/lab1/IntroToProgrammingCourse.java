@@ -4,8 +4,9 @@ import javax.swing.JOptionPane;
 
 /**
  * Describe responsibilities here. NOTE: this class has NO PREREQUISITES! Do not
- change this fact.
-This class extends ProgrammingCourse.  This particular class didn't need any special behaviors.  
+ * change this fact. This class extends ProgrammingCourse. This particular class
+ * didn't need any special behaviors.
+ *
  * @author alarkin1
  * @version 1.00
  */

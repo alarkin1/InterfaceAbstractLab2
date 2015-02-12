@@ -5,7 +5,7 @@ package lab1;
  *This class inherits its properties and methods from ProgrammingCourseWithPrerequisites.  
  I think that inheriting from 
  ProgrammingCourseWithPrerequisites is more efficient than simply adding the properties and methods to each class.
- The way I have stuctured the classes allows for easy expansion in the future
+ The way I have the classes organized allows for easy expansion in the future
  * @alarkin1
  * @version 1.00
  */
